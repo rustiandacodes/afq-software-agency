@@ -141,7 +141,6 @@ a {
 
 .hero-padding {
   padding: 7rem 0 3rem 0;
-  background-color: hotpink;
 }
 
 .section-padding {
@@ -181,6 +180,7 @@ nav {
   position: fixed;
   width: 100%;
   padding: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 nav .navbar {
   display: flex;
@@ -201,4 +201,33 @@ nav .navbar ul {
 }
 nav .navbar ul a {
   color: white;
+}
+nav .navbar .hamburger {
+  cursor: pointer;
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  nav .navbar ul {
+    flex-direction: column;
+    justify-content: center;
+    background-color: #070d18;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    transform: translateX(-100%);
+    animation: all 2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    gap: 30px;
+  }
+  nav .navbar .show {
+    transform: translateX(0);
+  }
+  nav .navbar .hamburger {
+    display: block;
+    transition: all 1s;
+  }
 }/*# sourceMappingURL=index.css.map */
