@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <div className="container">
+    <div className="container hero-padding">
       <p className="margin hero-title">this is a home page</p>
       <p className="margin header-1">this is a home page</p>
       <p className="margin header-2">this is a home page</p>

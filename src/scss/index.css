@@ -137,7 +137,15 @@ a {
 .container {
   width: min(90%, 1120px);
   margin-inline: auto;
-  padding: 7rem 0;
+}
+
+.hero-padding {
+  padding: 7rem 0 3rem 0;
+  background-color: hotpink;
+}
+
+.section-padding {
+  padding: 3rem;
 }
 
 body {
@@ -168,7 +176,8 @@ body {
 }
 
 nav {
-  background-color: aqua;
+  background-color: #070d18;
+  color: white;
   position: fixed;
   width: 100%;
   padding: 0.5rem;
@@ -191,5 +200,5 @@ nav .navbar ul {
   font-weight: 500;
 }
 nav .navbar ul a {
-  color: black;
+  color: white;
 }/*# sourceMappingURL=index.css.map */

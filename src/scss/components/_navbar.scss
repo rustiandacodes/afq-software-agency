@@ -1,7 +1,9 @@
 @use '../abstract/mixin' as mixin;
+@use '../base/colors' as colors;
 
 nav {
-  background-color: aqua;
+  background-color: colors.$mainColor;
+  color: white;
   position: fixed;
   width: 100%;
   padding: 0.5rem;
@@ -17,7 +19,7 @@ nav {
       gap: 20px;
       font-weight: 500;
       a {
-        color: black;
+        color: white;
       }
     }
   }
