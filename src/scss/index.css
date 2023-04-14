@@ -135,7 +135,7 @@ a {
 }
 
 .container {
-  width: min(90%, 1120px);
+  width: min(85%, 1120px);
   margin-inline: auto;
 }
 
@@ -144,7 +144,7 @@ a {
 }
 
 .section-padding {
-  padding: 3rem;
+  padding: 7rem 0;
 }
 
 body {
@@ -152,8 +152,8 @@ body {
 }
 
 .hero-title {
-  font-size: clamp(2rem, 1.2188rem + 2.5vw, 2.625rem);
   font-weight: bolder;
+  font-size: clamp(1.625rem, 0.375rem + 4vw, 2.625rem);
 }
 
 .header-1 {
@@ -162,12 +162,17 @@ body {
 }
 
 .header-2 {
-  font-size: 19px;
+  font-size: clamp(1rem, 0.6875rem + 1vw, 1.25rem);
   font-weight: 700;
 }
 
-.paragraph {
+.paragraph-1 {
+  font-size: clamp(1rem, 0.6875rem + 1vw, 1.25rem);
+}
+
+.paragraph-2 {
   font-size: 14px;
+  line-height: 1.5;
 }
 
 .margin {
@@ -207,7 +212,7 @@ nav .navbar .hamburger {
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 760px) {
   nav .navbar ul {
     flex-direction: column;
     justify-content: center;
@@ -229,5 +234,96 @@ nav .navbar .hamburger {
   nav .navbar .hamburger {
     display: block;
     transition: all 1s;
+  }
+}
+#hero {
+  color: white;
+  background-color: #070d18;
+  text-align: center;
+}
+#hero .container {
+  max-width: 50%;
+  padding: 5rem 0;
+}
+#hero .container h1 {
+  line-height: 1.5;
+}
+#hero .container h1 span {
+  color: #42bdec;
+}
+#hero .container p {
+  padding: 2rem 0 4rem 0;
+  line-height: 1.5;
+}
+#hero .container .hero-btn {
+  background-color: rgba(240, 240, 240, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  gap: 20px;
+  padding: 10px;
+  width: 200px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+#hero .container .hero-btn .feather-arrow-left {
+  background-color: white;
+  color: #505050;
+  padding: 5px 8px;
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 810px) {
+  #hero .container {
+    max-width: 100%;
+  }
+}
+#about-afq {
+  text-align: center;
+}
+#about-afq .title h2 {
+  margin-bottom: 2rem;
+}
+#about-afq .title h2 span {
+  color: #42bdec;
+}
+#about-afq .title p {
+  max-width: 950px;
+  margin-inline: auto;
+}
+#about-afq .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+  gap: 30px;
+}
+#about-afq .content .card {
+  border-radius: 20px;
+  padding: 1rem;
+  height: 280px;
+  display: flex;
+  width: 300px;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+#about-afq .content .card img {
+  max-height: 100px;
+}
+#about-afq .content .card p {
+  color: #505050;
+}
+#about-afq .content .card h3 {
+  padding: 0.3rem 0;
+}
+
+@media only screen and (max-width: 760px) {
+  .content {
+    flex-direction: column;
+    padding: 0 2rem;
   }
 }/*# sourceMappingURL=index.css.map */
