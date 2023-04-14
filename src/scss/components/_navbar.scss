@@ -1,0 +1,61 @@
+@use '../abstract/mixin' as mixin;
+@use '../base/colors' as colors;
+
+nav {
+  background-color: colors.$mainColor;
+  color: white;
+  position: fixed;
+  width: 100%;
+  padding: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  .navbar {
+    @include mixin.flex(space-between);
+    padding: 20px 0;
+    span {
+      font-weight: bolder;
+      font-size: larger;
+    }
+    ul {
+      @include mixin.flex(space-between);
+      gap: 20px;
+      font-weight: 500;
+      a {
+        color: white;
+      }
+    }
+
+    .hamburger {
+      cursor: pointer;
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  nav {
+    .navbar {
+      ul {
+        flex-direction: column;
+        justify-content: center;
+        background-color: colors.$mainColor;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: -1;
+        transform: translateX(-100%);
+        animation: all 2s;
+        top: 0;
+        left: 0;
+        right: 0;
+        gap: 30px;
+      }
+      .show {
+        transform: translateX(0);
+      }
+      .hamburger {
+        display: block;
+        transition: all 1s;
+      }
+    }
+  }
+}
