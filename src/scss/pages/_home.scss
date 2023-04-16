@@ -139,3 +139,64 @@
   }
 }
 //  end what we do section
+
+#achievement {
+  background-color: colors.$mainColor;
+  color: white;
+  position: relative;
+  .dashed-1 {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+  }
+  .dashed-2 {
+    position: absolute;
+    top: -130px;
+    left: 50px;
+  }
+  .dashed-3 {
+    position: absolute;
+    top: -50px;
+    right: 220px;
+  }
+  .succlent {
+    position: absolute;
+    bottom: -40px;
+    left: 300px;
+  }
+  .bell {
+    position: absolute;
+    top: -70px;
+    right: 250px;
+  }
+  .achieve-main {
+    @include mixin.flex(space-between);
+    .title {
+      @include mixin.flex();
+      flex-direction: column;
+      gap: 0.8rem;
+      h1 {
+        font-size: 3.5rem;
+        font-weight: bolder;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  #achievement {
+    .succlent {
+      left: 250px;
+    }
+    .bell {
+      right: 230px;
+    }
+    .dashed-2 {
+      left: 200px;
+    }
+  }
+  .achieve-main {
+    flex-direction: column-reverse;
+    gap: 5rem;
+  }
+}

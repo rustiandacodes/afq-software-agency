@@ -184,6 +184,7 @@ nav {
   color: white;
   position: fixed;
   width: 100%;
+  z-index: 999;
   padding: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -363,5 +364,67 @@ nav .navbar .hamburger {
 @media (max-width: 760px) {
   #what-we-do .content .card {
     width: 280px;
+  }
+}
+#achievement {
+  background-color: #070d18;
+  color: white;
+  position: relative;
+}
+#achievement .dashed-1 {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+}
+#achievement .dashed-2 {
+  position: absolute;
+  top: -130px;
+  left: 50px;
+}
+#achievement .dashed-3 {
+  position: absolute;
+  top: -50px;
+  right: 220px;
+}
+#achievement .succlent {
+  position: absolute;
+  bottom: -40px;
+  left: 300px;
+}
+#achievement .bell {
+  position: absolute;
+  top: -70px;
+  right: 250px;
+}
+#achievement .achieve-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#achievement .achieve-main .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+#achievement .achieve-main .title h1 {
+  font-size: 3.5rem;
+  font-weight: bolder;
+}
+
+@media only screen and (max-width: 760px) {
+  #achievement .succlent {
+    left: 250px;
+  }
+  #achievement .bell {
+    right: 230px;
+  }
+  #achievement .dashed-2 {
+    left: 200px;
+  }
+  .achieve-main {
+    flex-direction: column-reverse;
+    gap: 5rem;
   }
 }/*# sourceMappingURL=index.css.map */

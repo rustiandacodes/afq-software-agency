@@ -10,6 +10,11 @@ import ilustrationBigData from '../assets/big-data.svg'
 import ilustrationCyberSecurity from '../assets/cyber-security.svg'
 import ilustrationMobileApp from '../assets/mobile-app.svg'
 import ilustrationDigitalMarketing from '../assets/digital-marketing.svg'
+import ilustrationDashed1 from '../assets/Vector 1.png'
+import ilustrationDashed2 from '../assets/Vector 2.png'
+import ilustrationDashed3 from '../assets/Vector 3.png'
+import ilustrationSucclent from '../assets/Succlent angle 1.png'
+import ilustrationBell from '../assets/Bell Angle 1.png'
 const Home = () => {
   return (
     <div id="home">
@@ -147,7 +152,29 @@ const Home = () => {
       {/* end what we do */}
 
       <section id="achievement">
-        <div className="container section-pading"></div>
+        <img className="dashed-1" src={ilustrationDashed1} alt="ilustration" />
+        <img className="dashed-2" src={ilustrationDashed2} alt="ilustration" />
+        <img className="succlent" src={ilustrationSucclent} alt="ilustration" />
+        <img className="dashed-3" src={ilustrationDashed3} alt="ilustration" />
+        <img className="bell" src={ilustrationBell} alt="ilustration" />
+        <div className="container achieve-main section-padding">
+          <div className="title">
+            <h1>6</h1>
+            <p className="paragraph-2">Happy Clients</p>
+          </div>
+          <div className="title">
+            <h1>11</h1>
+            <p className="paragraph-2">Completed Projects</p>
+          </div>
+          <div className="title">
+            <h1>7M</h1>
+            <p className="paragraph-2">Transsactions</p>
+          </div>
+          <div className="title">
+            <h1>600+</h1>
+            <p className="paragraph-2">Customers</p>
+          </div>
+        </div>
       </section>
     </div>
   )
