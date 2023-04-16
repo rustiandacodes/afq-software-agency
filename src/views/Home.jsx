@@ -2,6 +2,14 @@ import { ArrowRight } from 'react-feather'
 import ilustrationVr from '../assets/VR Array 1.svg'
 import ilustrationLineChart from '../assets/Line Chart 1.svg'
 import ilustrationClock from '../assets/clock 1.svg'
+import ilustrationWebApplication from '../assets/web-application.svg'
+import ilustrationGameDev from '../assets/game-development.svg'
+import ilustrationSeo from '../assets/SEO.svg'
+import ilustrationIot from '../assets/iot.svg'
+import ilustrationBigData from '../assets/big-data.svg'
+import ilustrationCyberSecurity from '../assets/cyber-security.svg'
+import ilustrationMobileApp from '../assets/mobile-app.svg'
+import ilustrationDigitalMarketing from '../assets/digital-marketing.svg'
 const Home = () => {
   return (
     <div id="home">
@@ -71,6 +79,76 @@ const Home = () => {
         </div>
       </section>
       {/* end about afq */}
+
+      {/* start what we do */}
+      <section id="what-we-do">
+        <div className="container section-padding">
+          <h2 className="header-1">What We Do</h2>
+          <div className="content">
+            <div className="card">
+              <img src={ilustrationWebApplication} alt="ilustration" />
+              <h2 className="header-2">Web Application</h2>
+              <p className="paragraph-2">
+                Platform independant business solutions for maximum availability
+              </p>
+            </div>
+            <div className="card">
+              <img src={ilustrationGameDev} alt="ilustration" />
+              <h2 className="header-2">Game Development</h2>
+              <p className="paragraph-2">
+                Interactive games with perfect graphics
+              </p>
+            </div>
+            <div className="card">
+              <img src={ilustrationSeo} alt="ilustration" />
+              <h2 className="header-2">SEO</h2>
+              <p className="paragraph-2">
+                Let the world find you on top of others
+              </p>
+            </div>
+            <div className="card">
+              <img src={ilustrationIot} alt="ilustration" />
+              <h2 className="header-2">Iot/ AI/ RObotic</h2>
+              <p className="paragraph-2">
+                Advanced autonomous technologies to make life simple
+              </p>
+            </div>
+            <div className="card">
+              <img src={ilustrationBigData} alt="ilustration" />
+              <h2 className="header-2">BIG Data</h2>
+              <p className="paragraph-2">
+                Get your decision making backed by inteligent insight
+              </p>
+            </div>
+            <div className="card">
+              <img src={ilustrationCyberSecurity} alt="ilustration" />
+              <h2 className="header-2">Cyber Security</h2>
+              <p className="paragraph-2">
+                Make your digital assets secure and protected
+              </p>
+            </div>
+            <div className="card">
+              <img src={ilustrationMobileApp} alt="ilustration" />
+              <h2 className="header-2">Mobile Applications</h2>
+              <p className="paragraph-2">
+                The simplest but robust technology to accompany with you
+              </p>
+            </div>
+            <div className="card">
+              <img src={ilustrationDigitalMarketing} alt="ilustration" />
+              <h2 className="header-2">Digital Marketing</h2>
+              <p className="paragraph-2">
+                Business made easy in a digital world
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* end what we do */}
+
+      <section id="achievement">
+        <div className="container section-pading"></div>
+      </section>
     </div>
   )
 }
