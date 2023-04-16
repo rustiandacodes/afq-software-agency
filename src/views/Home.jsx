@@ -17,7 +17,7 @@ import ilustrationSucclent from '../assets/Succlent angle 1.png'
 import ilustrationBell from '../assets/Bell Angle 1.png'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination, Navigation, Scrollbar } from 'swiper'
+import { Pagination, Navigation } from 'swiper'
 
 import ln1 from '../assets/ln-1.png'
 import ln2 from '../assets/ln-2.png'
@@ -210,7 +210,7 @@ const Home = () => {
                 slidesPerView: 4,
                 slidesPerGroup: 1,
                 810: {
-                  slidesPerView: 3,
+                  slidesPerView: 2,
                   slidesPerGroup: 1,
                 },
                 375: {

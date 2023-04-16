@@ -452,7 +452,7 @@ nav .navbar .hamburger {
 }
 #our-latest-news .content .read-more {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   padding: 20px 0;
   gap: 10px;
