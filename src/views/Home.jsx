@@ -15,6 +15,15 @@ import ilustrationDashed2 from '../assets/Vector 2.png'
 import ilustrationDashed3 from '../assets/Vector 3.png'
 import ilustrationSucclent from '../assets/Succlent angle 1.png'
 import ilustrationBell from '../assets/Bell Angle 1.png'
+
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Pagination, Navigation, Scrollbar } from 'swiper'
+
+import ln1 from '../assets/ln-1.png'
+import ln2 from '../assets/ln-2.png'
+import ln3 from '../assets/ln-3.png'
+import ln4 from '../assets/ln-4.png'
+
 const Home = () => {
   return (
     <div id="home">
@@ -176,6 +185,146 @@ const Home = () => {
           </div>
         </div>
       </section>
+      {/* end achievement */}
+
+      {/* start Our Latest News */}
+      <section id="our-latest-news">
+        <div className="container hero-padding">
+          <div className="title">
+            <h2 className="header-1">Our Latest News</h2>
+            <p className="paragraph-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt
+            </p>
+          </div>
+          <div className="content">
+            <Swiper
+              spaceBetween={20}
+              slidesPerView={4}
+              slidesPerGroup={1}
+              modules={[Navigation, Pagination]}
+              pagination={{ clickable: true }}
+              navigation
+              breakpoints={{
+                900: {},
+                slidesPerView: 4,
+                slidesPerGroup: 1,
+                810: {
+                  slidesPerView: 3,
+                  slidesPerGroup: 1,
+                },
+                375: {
+                  slidesPerView: 1,
+                },
+              }}
+            >
+              <SwiperSlide>
+                <div className="card-swiper">
+                  <div className="container-image">
+                    <img src={ln1} alt="img-article" />
+                  </div>
+                  <div className="content-slider">
+                    <p className="date">12/12/23</p>
+                    <h3 className="header-2">Holoplot</h3>
+                    <p className="paragraph-2">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an
+                    </p>
+                  </div>
+                  <div className="read-more">
+                    <span className="paragraph-2">Read more</span>
+                    <ArrowRight />
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="card-swiper">
+                  <div className="container-image">
+                    <img src={ln2} alt="img-article" />
+                  </div>
+                  <div className="content-slider">
+                    <p className="date">12/12/23</p>
+                    <h3 className="header-2">Nawaloka Hospitals Mobile App</h3>
+                    <p className="paragraph-2">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an
+                    </p>
+                    <div className="read-more">
+                      <span className="paragraph-2">Read more</span>
+                      <ArrowRight />
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="card-swiper">
+                  <div className="container-image">
+                    <img src={ln3} alt="img-article" />
+                  </div>
+                  <div className="content-slider">
+                    <p className="date">12/12/23</p>
+                    <h3 className="header-2">
+                      Smart Solution For Ambuluwawa Biodiversity Complex
+                    </h3>
+                    <p className="paragraph-2">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an
+                    </p>
+                    <div className="read-more">
+                      <span className="paragraph-2">Read more</span>
+                      <ArrowRight />
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="card-swiper">
+                  <div className="container-image">
+                    <img src={ln3} alt="img-article" />
+                  </div>
+                  <div className="content-slider">
+                    <p className="date">12/12/23</p>
+                    <h3 className="header-2">Nawaloka Hospitals Mobile App</h3>
+                    <p className="paragraph-2">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an
+                    </p>
+                    <div className="read-more">
+                      <span className="paragraph-2">Read more</span>
+                      <ArrowRight />
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="card-swiper">
+                  <div className="container-image">
+                    <img src={ln4} alt="img-article" />
+                  </div>
+                  <div className="content-slider">
+                    <p className="date">12/12/23</p>
+                    <h3 className="header-2">Holoplot</h3>
+                    <p className="paragraph-2">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an
+                    </p>
+                    <div className="read-more">
+                      <span className="paragraph-2">Read more</span>
+                      <ArrowRight />
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
+      </section>
+      {/* end Our Latest News */}
     </div>
   )
 }
