@@ -247,6 +247,105 @@ nav .navbar .hamburger {
     transition: all 1s;
   }
 }
+footer {
+  background-color: #070d18;
+  color: white;
+}
+footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+footer .container hr {
+  height: 200px;
+}
+footer .container .keyword h4 {
+  margin-bottom: 2rem;
+}
+footer .container .keyword ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 300px;
+  flex-wrap: wrap;
+}
+footer .container .keyword ul li {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: white;
+  color: #070d18;
+  opacity: 80%;
+  margin: 5px;
+}
+footer .container .search-container .search h3 {
+  margin-bottom: 2rem;
+}
+footer .container .search-container .search .input-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container .search-container .search .input-field input {
+  padding: 0.7rem;
+  width: 170px;
+}
+footer .container .search-container .search .input-field .icon {
+  background-color: #6e00fa;
+  padding: 0.5rem;
+}
+footer .container .search-container .title {
+  margin-top: 3rem;
+}
+footer .container .search-container .title h3 {
+  margin-bottom: 1rem;
+}
+footer .container .search-container .title p {
+  color: #505050;
+}
+footer .container .container-text h3 {
+  margin-bottom: 1rem;
+}
+footer .container .container-text p {
+  color: #505050;
+}
+footer .container .container-text .title {
+  margin-bottom: 3rem;
+}
+footer .container .socials-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3rem;
+  gap: 10px;
+}
+footer .container .socials-media .social-container {
+  padding: 0.5rem;
+  background-color: #6e00fa;
+  border-radius: 80px;
+}
+footer .container .socials-media .social-container img {
+  width: 20px;
+}
+
+@media only screen and (max-width: 810px) {
+  footer .container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5rem;
+  }
+  footer .container hr {
+    display: none;
+  }
+  footer .container .socials-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
+}
 #hero {
   color: white;
   background-color: #070d18;

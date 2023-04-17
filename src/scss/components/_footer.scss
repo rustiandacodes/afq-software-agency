@@ -1,0 +1,101 @@
+@use '../base/colors' as colors;
+@use '../abstract/mixin' as mixin;
+
+footer {
+  background-color: colors.$mainColor;
+  color: white;
+  .container {
+    hr {
+      height: 200px;
+    }
+    @include mixin.flex(center, flex-start);
+    gap: 10px;
+    .keyword {
+      h4 {
+        margin-bottom: 2rem;
+      }
+      ul {
+        @include mixin.flex(flex-start);
+        width: 300px;
+        flex-wrap: wrap;
+        li {
+          width: fit-content;
+          border-radius: 5px;
+          padding: 5px;
+          background-color: white;
+          color: colors.$mainColor;
+          opacity: 80%;
+          margin: 5px;
+        }
+      }
+    }
+    .search-container {
+      .search {
+        h3 {
+          margin-bottom: 2rem;
+        }
+        .input-field {
+          @include mixin.flex(center, center);
+          input {
+            padding: 0.7rem;
+            width: 170px;
+          }
+          .icon {
+            background-color: colors.$purpple;
+            padding: 0.5rem;
+          }
+        }
+      }
+      .title {
+        margin-top: 3rem;
+        h3 {
+          margin-bottom: 1rem;
+        }
+        p {
+          color: colors.$text-grey;
+        }
+      }
+    }
+    .container-text {
+      h3 {
+        margin-bottom: 1rem;
+      }
+      p {
+        color: colors.$text-grey;
+      }
+      .title {
+        margin-bottom: 3rem;
+      }
+    }
+    .socials-media {
+      @include mixin.flex(center, center);
+      padding: 0 3rem;
+      gap: 10px;
+      .social-container {
+        padding: 0.5rem;
+        background-color: colors.$purpple;
+        border-radius: 80px;
+        img {
+          width: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  footer {
+    .container {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 5rem;
+      hr {
+        display: none;
+      }
+      .socials-media {
+        @include mixin.flex(center, center);
+        padding: 0px;
+      }
+    }
+  }
+}
